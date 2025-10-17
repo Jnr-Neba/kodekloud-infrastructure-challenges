@@ -41,25 +41,3 @@ fi
 ```
 
 ---
-
-## **STEP 3: Add Simple Tomcat Notes**
-
-Create a file called `tomcat-notes.txt`:
-```
-Tomcat Deployment Challenge
-===========================
-
-What I did:
-- Installed Java OpenJDK 1.8
-- Downloaded and installed Apache Tomcat 9
-- Changed port from 8080 to 6200 in server.xml
-- Created systemd service for auto-start
-- Deployed ROOT.war application
-- Made it run as 'tomcat' user (not root)
-
-Key commands:
-sudo yum install java-1.8.0-openjdk -y
-systemctl start tomcat
-curl http://stapp01:6200
-
-Result: Successfully deployed Java web app on custom port
